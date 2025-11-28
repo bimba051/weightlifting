@@ -10,13 +10,8 @@ const images = [
 
 let currentIndex = 0;
     const galleryImage = document.getElementById('galleryImage');
-    const prevBtn = document.getElementById('prev');
     const nextBtn = document.getElementById('next');
 
-prevBtn.addEventListener('click', () => {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    galleryImage.src = images[currentIndex];
-});
 
 nextBtn.addEventListener('click', () => {
     currentIndex = (currentIndex + 1) % images.length;
